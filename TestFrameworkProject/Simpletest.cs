@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace TestFrameworkProject
 {
     [TestFixture]
+    [Parallelizable]
     public class Simpletest
     {
         [Test]

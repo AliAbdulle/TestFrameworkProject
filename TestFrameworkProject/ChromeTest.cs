@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace TestFrameworkProject
 {
     [TestFixture]
+    [Parallelizable]
     public class ChromeTest
     {
         [Test]
@@ -17,17 +18,23 @@ namespace TestFrameworkProject
             Console.WriteLine("Recieve mail");
         }
         [Test]
-        public void SemdMail()
+        public void SendMail()
         {
             //selenium Code
             Console.WriteLine("Sending email mail");
         }
 
         [SetUp]
-        public void setup()
+        public void openBrowser()
         {
-            Console.WriteLine("Set up");
+            Console.WriteLine("Open Browser");
         }
-       
+
+        [TearDown]
+        public void loseBrowser()
+        {
+            Console.WriteLine("Close Browser");
+        }
+
     }
 }
