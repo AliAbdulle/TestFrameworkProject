@@ -1,1 +1,2 @@
 C:\Users\Ali Dhobey\workspace\Projects\TestFrameworkProject\TestFrameworkProject\obj\Debug\TestFrameworkProject.csproj.CoreCompileInputs.cache
+C:\Users\Ali Dhobey\workspace\Projects\TestFrameworkProject\TestFrameworkProject\obj\Debug\TestFrameworkProject.csprojAssemblyReference.cache

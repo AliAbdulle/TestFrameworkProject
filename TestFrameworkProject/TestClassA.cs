@@ -1,4 +1,5 @@
-﻿using AventStack.ExtentReports;
+﻿
+using AventStack.ExtentReports;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -13,12 +14,13 @@ namespace TestFrameworkProject
     [TestFixture]
     class TestClassA
     {
+        public object LogStatus { get; private set; }
 
         [Test]
-        public void testMethod()
+        public void TestMethod()
         {
             ExtentReports extent = new ExtentReports("E:\\report\\report.html");
-            var test =  extent.StartTest("TestClass A", "Simple Description");
+            var test =  extent.StartTest("TestClassA", "Simple Description");
 
             test.Log(LogStatus.Info, "Validating the download link");
 
